@@ -61,3 +61,10 @@ body{
   width: 100%;
   height: auto;
 }
+
+@media (max-width: 1000px) {
+  .main-container{
+    height: auto; 
+    padding-bottom: 3rem !important; 
+  }
+}
