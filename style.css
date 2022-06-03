@@ -4,7 +4,7 @@ body{
 
 .main-container{
   height: 95vh;  
-  width: auto;
+  /* width: auto; */
   display: flex;
   justify-content: center;
   align-items: center;  
@@ -65,6 +65,6 @@ body{
 @media (max-width: 1000px) {
   .main-container{
     height: auto; 
-    padding-bottom: 3rem !important; 
+    /* padding-bottom: 3rem !important;  */
   }
 }
