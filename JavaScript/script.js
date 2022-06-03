@@ -13,8 +13,8 @@ const dailyData = async ()=>{
   const currList = data.map(content=>{
     return content.timeframes.daily
   })
-  const testing1 = document.querySelectorAll('.testing1')
-  const testing2 = document.querySelectorAll('.testing2')
+  const testing1 = document.querySelectorAll('.current')
+  const testing2 = document.querySelectorAll('.previous')
   Array.from(testing1).forEach((e, i)=>{
     e.innerHTML = `${currList[i].current}hrs`
   })
@@ -40,8 +40,8 @@ const weeklyData = async()=>{
   const currList = data.map(content=>{
     return content.timeframes.weekly
   })
-  const testing1 = document.querySelectorAll('.testing1')
-  const testing2 = document.querySelectorAll('.testing2')
+  const testing1 = document.querySelectorAll('.current')
+  const testing2 = document.querySelectorAll('.previous')
   Array.from(testing1).forEach((e, i)=>{
     e.innerHTML = `${currList[i].current}hrs`
   })
@@ -67,8 +67,8 @@ const monthlyData = async()=>{
   const currList = data.map(content=>{
     return content.timeframes.monthly
   })
-  const testing1 = document.querySelectorAll('.testing1')
-  const testing2 = document.querySelectorAll('.testing2')
+  const testing1 = document.querySelectorAll('.current')
+  const testing2 = document.querySelectorAll('.previous')
   Array.from(testing1).forEach((e, i)=>{
     e.innerHTML = `${currList[i].current}hrs`
   })
