@@ -73,6 +73,6 @@
   color: rgb(230, 199, 199);
 }
 
-.txt::after{
+.txt:hover{
   color: white;
 }
