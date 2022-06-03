@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>active-status-project</title>
+    <meta name="title" content="active-status-project">
+    <meta name="description" content="i made this project help off javascriot">
+      
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="active-status-project">
+    <meta property="og:description" content="i made this project help off javascriot">
+    <meta property="og:image" content="https://i.postimg.cc/ZCdZKpQL/desktop-design.jpg">
+      
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="active-status-project">
+    <meta property="twitter:description" content="i made this project help off javascriot">
+    <meta property="twitter:image" content="https://i.postimg.cc/ZCdZKpQL/desktop-design.jpg">
+    <title>Active-Status</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./JavaScript/script.js"></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="all-cart">
+          <div class="row mt-5">
+            <div class="col-3">
+              <div class="first py-4 rounded-4">
+                <div class="img-user ms-4">
+                  <img src="./images/image-jeremy.png" alt="" />
+                </div>
+                <p class="mt-5 ms-4 report">Report for</p>
+                <h3 class="ms-4 text-light">Bhupendra</h3>
+                <h3 class="ms-4 text-light">Deshmukh</h3>
+              </div>
+
+              <div class="first-down py-5 rounded-4">
+                <p class="ms-4 txt" onclick="dailyData()">Daily</p>
+                <p class="ms-4 txt" onclick="weeklyData()">Weekly</p>
+                <p class="ms-4 txt" onclick="monthlyData()">Monthly</p>
+              </div>
+            </div>
+
+            <div class="col-3 card-element">
+              <div class="cart-6">
+                <div class="cart-1 bg-danger rounded-4">
+                  <div class="top-cart">
+                    <img class="m" src="./images/icon-work.svg" alt="" />
+                  </div>
+                </div>
+                <div class="cart-2 py-2 rounded-4">
+                  <div class="d-flex justify-content-between">
+                    <p class="ms-4 fs-4 mt-2 text-light">Work</p>
+                    <p class="me-4 fs-4 text-light">...</p>
+                  </div>
+                  <div class="times">
+                    <h1 class="ms-3 text-light work-current testing1">32hrs</h1>
+                  </div>
+                  <div class="last-week">
+                    <p class="text-light ms-3 work-previous testing2">Last Week - 36hrs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-666">
+                <div class="cart-1">
+                  <div class="top-cart rounded-4 topcc py-2">
+                    <img class="m" src="./images/icon-exercise.svg" alt="" />
+                  </div>
+                </div>
+                <div class="cart-2 cart-222 py-2 rounded-4">
+                  <div class="d-flex justify-content-between">
+                    <p class="ms-4 fs-4 mt-2 text-light">Exercise</p>
+                    <p class="me-4 fs-4 text-light">...</p>
+                  </div>
+                  <div class="times">
+                    <h1 class="ms-3 text-light exe-current testing1">4hrs</h1>
+                  </div>
+                  <div class="last-week">
+                    <p class="text-light ms-3 exe-previous testing2">Last Week - 5hrs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 card-element">
+              <div class="cart-6">
+                <div class="cart-1 bg-primary rounded-4">
+                  <div class="top-cart">
+                    <img class="m" src="./images/icon-play.svg" alt="" />
+                  </div>
+                </div>
+                <div class="cart-2 py-2 rounded-4">
+                  <div class="d-flex justify-content-between">
+                    <p class="ms-4 fs-4 mt-2 text-light">Play</p>
+                    <p class="me-4 fs-4 text-light">...</p>
+                  </div>
+                  <div class="times">
+                    <h1 class="ms-3 text-light play-current testing1">10hrs</h1>
+                  </div>
+                  <div class="last-week">
+                    <p class="text-light ms-3 play-previous testing2">Last Week - 8hrs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-666">
+                <div class="cart-1">
+                  <div class="top-cart topcc rounded-4 social">
+                    <img
+                      class="m"
+                      style="width: 4rem; margin-left: 10rem"
+                      src="./images/icon-social.svg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="cart-2 cart-222 py-2 rounded-4">
+                  <div class="d-flex justify-content-between">
+                    <p class="ms-4 fs-4 mt-2 text-light">Socile</p>
+                    <p class="me-4 fs-4 text-light">...</p>
+                  </div>
+                  <div class="times">
+                    <h1 class="ms-3 text-light social-current testing1">5hrs</h1>
+                  </div>
+                  <div class="last-week">
+                    <p class="text-light ms-3 social-previous testing2">Last Week - 10hrs</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 card-element">
+
+              <div class="cart-6">
+                <div class="cart-1">
+                  <div class="top-cart study rounded-4">
+                    <img class="m" src="./images/icon-study.svg" alt="" />
+                  </div>
+                </div>
+                <div class="cart-2 py-2 rounded-4">
+                  <div class="d-flex justify-content-between">
+                    <p class="ms-4 fs-4 mt-2 text-light">Study</p>
+                    <p class="me-4 fs-4 text-light">...</p>
+                  </div>
+                  <div class="times">
+                    <h1 class="ms-3 text-light study-current testing1">4hrs</h1>
+                  </div>
+                  <div class="last-week">
+                    <p class="text-light ms-3 study-previous testing2">Last Week - 7hrs</p>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-666">
+                <div class="cart-1">
+                  <div class="top-cart rounded-4 self-care topcc py-1">
+                    <img class="m" src="./images/icon-self-care.svg" alt="" />
+                  </div>
+                </div>
+                <div class="cart-2 cart-222 py-2 rounded-4">
+                  <div class="d-flex justify-content-between">
+                    <p class="ms-4 fs-4 mt-2 text-light">Self Care</p>
+                    <p class="me-4 fs-4 text-light">...</p>
+                  </div>
+                  <div class="times">
+                    <h1 class="ms-3 text-light self-current">2hrs</h1>
+                  </div>
+                  <div class="last-week">
+                    <p class="text-light ms-3 self-previous">Last Week - 2hrs</p>
+                  </div>
+                </div>
+              </div>
+           
+           
+            </div>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

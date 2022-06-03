@@ -1,0 +1,78 @@
+.main-container{
+  height: 100vh;  
+  display: flex;
+  align-items: center;
+  
+} 
+
+.img-user img {
+  width: 5rem;
+}
+
+.first {
+
+  margin-top: -22rem;
+  width: 18rem;
+  background-color: #6464c6;
+  /* z-index: ; */
+}
+
+.first-down {
+  /* z-index: 1; */
+  width: 18rem;
+  position: absolute;
+  top: 27.5rem;
+  background-color: #022762;
+}
+
+.top-cart img {
+  margin-left: 11rem;
+}
+
+.cart-2 {
+  cursor: pointer;
+  width: 18rem;
+  /* z-index: 100; */
+  position: absolute;
+  top: 13rem;
+  background-color: #022762;
+}
+.cart-1 {
+  /* z-index: -2; */
+  cursor: pointer;
+  width: 18rem;
+  position: absolute;
+  top: 10rem;
+}
+
+.cart-666 {
+  cursor: pointer;
+  background-color: black;
+  position: relative;
+  margin-top: -15rem !important;
+}
+
+.topcc{
+  background-color: rgb(89, 172, 89);
+}
+
+.social{
+  background-color: rgb(49, 49, 220);
+}
+.study{
+  background-color:#d3455d;
+}
+.self-care{
+  background-color: rgb(158, 139, 13);
+}
+.txt{
+  color: gray;
+  cursor: pointer;
+}
+.report{
+  color: rgb(230, 199, 199);
+}
+
+.txt::after{
+  color: white;
+}
