@@ -17,40 +17,6 @@
     }
   },
   {
-    "title": "Play",
-    "timeframes": {
-      "daily": {
-        "current": 1,
-        "previous": 2
-      },
-      "weekly": {
-        "current": 10,
-        "previous": 8
-      },
-      "monthly": {
-        "current": 23,
-        "previous": 29
-      }
-    }
-  },
-  {
-    "title": "Study",
-    "timeframes": {
-      "daily": {
-        "current": 0,
-        "previous": 1
-      },
-      "weekly": {
-        "current": 4,
-        "previous": 7
-      },
-      "monthly": {
-        "current": 13,
-        "previous": 19
-      }
-    }
-  },
-  {
     "title": "Exercise",
     "timeframes": {
       "daily": {
@@ -64,6 +30,23 @@
       "monthly": {
         "current": 11,
         "previous": 18
+      }
+    }
+  },
+  {
+    "title": "Play",
+    "timeframes": {
+      "daily": {
+        "current": 1,
+        "previous": 2
+      },
+      "weekly": {
+        "current": 10,
+        "previous": 8
+      },
+      "monthly": {
+        "current": 23,
+        "previous": 29
       }
     }
   },
@@ -85,6 +68,24 @@
     }
   },
   {
+    "title": "Study",
+    "timeframes": {
+      "daily": {
+        "current": 0,
+        "previous": 1
+      },
+      "weekly": {
+        "current": 4,
+        "previous": 7
+      },
+      "monthly": {
+        "current": 13,
+        "previous": 19
+      }
+    }
+  },
+
+  {
     "title": "Self Care",
     "timeframes": {
       "daily": {
@@ -102,4 +103,3 @@
     }
   }
 ]
-

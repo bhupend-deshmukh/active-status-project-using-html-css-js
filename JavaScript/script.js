@@ -1,8 +1,11 @@
 console.log("Bhupendra Deshmukh");
 
 
+const cardGroup = document.querySelectorAll('.mycardclass')
+// console.log(mainCardBody)
 const fetchData =async()=>{
   const resp = await fetch("JavaScript/data.json")
+  // console.log(resp);
   const data = await resp.json()
   return data
 }
@@ -13,24 +16,20 @@ const dailyData = async ()=>{
   const currList = data.map(content=>{
     return content.timeframes.daily
   })
-  
+  cardGroup.forEach(elem=>{
+    elem.classList.remove('d-none')
+  })
   const current = document.querySelectorAll('.current')
   const previous = document.querySelectorAll('.previous')
 
   current.forEach((e,i)=>{
     console.log(e,i,"using forEach JAVASCRIPT....");
-    e.innerHTML = `${currList[i].current}hrs`
+    e.innerHTML = `${currList[i].current}hrs`   
   })
-
+  
   previous.forEach((e, i)=>{
     e.innerHTML = `Last Week - ${currList[i].previous}hrs`
   })
-
-
-  // Array.from(current).map((e, i)=>{
-  //   console.log(e,"Hachhhhhhhhhhhh Hoy.............");
-  //   e.innerHTML = `${currList[i].current}hrs`
-  // })
 
 }
 
@@ -40,9 +39,11 @@ const weeklyData = async()=>{
   const currList = data.map(content=>{
     return content.timeframes.weekly
   })
+  cardGroup.forEach(elem=>{
+    elem.classList.remove('d-none')
+  })
   const current = document.querySelectorAll('.current')
   const previous = document.querySelectorAll('.previous')
-
 
   current.forEach((e,i)=>{
     console.log(e,i,"using forEach JAVASCRIPT....");
@@ -52,14 +53,6 @@ const weeklyData = async()=>{
   previous.forEach((e, i)=>{
     e.innerHTML = `Last Week - ${currList[i].previous}hrs`
   })
-
-
-  // Array.from(current).forEach((e, i)=>{
-  //   e.innerHTML = `${currList[i].current}hrs`
-  // })
-  // Array.from(previous).forEach((e, i)=>{
-  //   e.innerHTML = `Last Week - ${currList[i].previous}hrs`
-  // })
 }
 
 const monthlyData = async()=>{
@@ -67,6 +60,10 @@ const monthlyData = async()=>{
   const currList = data.map(content=>{
     return content.timeframes.monthly
   })
+  cardGroup.forEach(elem=>{
+    elem.classList.remove('d-none')
+  })
+  
   const current = document.querySelectorAll('.current')
   const previous = document.querySelectorAll('.previous')
   
@@ -78,13 +75,6 @@ const monthlyData = async()=>{
   previous.forEach((e, i)=>{
     e.innerHTML = `Last Week - ${currList[i].previous}hrs`
   })
-
-  
-  // Array.from(current).forEach((e, i)=>{
-  //   e.innerHTML = `${currList[i].current}hrs`
-  // })
-  // Array.from(previous).forEach((e, i)=>{
-  //   e.innerHTML = `Last Week - ${currList[i].previous}hrs`
-  // })
-
 }
+
+ 

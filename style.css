@@ -56,12 +56,17 @@ body{
   justify-items: end;
   justify-content: end;
 }
+.back-color{
+  background-color: rgb(182, 32, 65);
+}
 
 .smal-1{
   width: 100%;
   height: auto;
 }
-
+.bg-color{
+  background-color: rgb(84, 17, 147);
+}
 @media (max-width: 1000px) {
   .main-container{
     height: auto; 
