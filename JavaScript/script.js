@@ -13,53 +13,53 @@ const dailyData = async ()=>{
   const currList = data.map(content=>{
     return content.timeframes.daily
   })
-  const testing1 = document.querySelectorAll('.current')
-  const testing2 = document.querySelectorAll('.previous')
-  Array.from(testing1).forEach((e, i)=>{
+  
+  const current = document.querySelectorAll('.current')
+  const previous = document.querySelectorAll('.previous')
+
+  current.forEach((e,i)=>{
+    console.log(e,i,"using forEach JAVASCRIPT....");
     e.innerHTML = `${currList[i].current}hrs`
   })
-  Array.from(testing2).forEach((e, i)=>{
+
+  previous.forEach((e, i)=>{
     e.innerHTML = `Last Week - ${currList[i].previous}hrs`
   })
-  // document.querySelector(".work-current").innerHTML = `${currList[0].current}hrs`
-  // document.querySelector(".work-previous").innerHTML = `Last Week - ${currList[0].previous}hrs`
-  // document.querySelector(".exe-current").innerHTML = `${currList[1].current}hrs`
-  // document.querySelector(".exe-previous").innerHTML = `Last Week - ${currList[1].previous}hrs`
-  // document.querySelector(".play-current").innerHTML = `${currList[2].current}hrs`
-  // document.querySelector(".play-previous").innerHTML = `Last Week - ${currList[2].previous}hrs`
-  // document.querySelector(".social-current").innerHTML = `${currList[3].current}hrs`
-  // document.querySelector(".social-previous").innerHTML = `Last Week - ${currList[3].previous}hrs`
-  // document.querySelector(".study-current").innerHTML = `${currList[4].current}hrs`
-  // document.querySelector(".study-previous").innerHTML = `Last Week - ${currList[4].previous}hrs`
-  // document.querySelector(".self-current").innerHTML = `${currList[5].current}hrs`
-  // document.querySelector(".self-previous").innerHTML = `Last Week - ${currList[5].previous}hrs`
+
+
+  // Array.from(current).map((e, i)=>{
+  //   console.log(e,"Hachhhhhhhhhhhh Hoy.............");
+  //   e.innerHTML = `${currList[i].current}hrs`
+  // })
+
 }
+
 
 const weeklyData = async()=>{
   const data = await fetchData()
   const currList = data.map(content=>{
     return content.timeframes.weekly
   })
-  const testing1 = document.querySelectorAll('.current')
-  const testing2 = document.querySelectorAll('.previous')
-  Array.from(testing1).forEach((e, i)=>{
+  const current = document.querySelectorAll('.current')
+  const previous = document.querySelectorAll('.previous')
+
+
+  current.forEach((e,i)=>{
+    console.log(e,i,"using forEach JAVASCRIPT....");
     e.innerHTML = `${currList[i].current}hrs`
   })
-  Array.from(testing2).forEach((e, i)=>{
+
+  previous.forEach((e, i)=>{
     e.innerHTML = `Last Week - ${currList[i].previous}hrs`
   })
-  // document.querySelector(".work-current").innerHTML = `${currList[0].current}hrs`
-  // document.querySelector(".work-previous").innerHTML = `Last Week - ${currList[0].previous}hrs`
-  // document.querySelector(".exe-current").innerHTML = `${currList[1].current}hrs`
-  // document.querySelector(".exe-previous").innerHTML = `Last Week - ${currList[1].previous}hrs`
-  // document.querySelector(".play-current").innerHTML = `${currList[2].current}hrs`
-  // document.querySelector(".play-previous").innerHTML = `Last Week - ${currList[2].previous}hrs`
-  // document.querySelector(".social-current").innerHTML = `${currList[3].current}hrs`
-  // document.querySelector(".social-previous").innerHTML = `Last Week - ${currList[3].previous}hrs`
-  // document.querySelector(".study-current").innerHTML = `${currList[4].current}hrs`
-  // document.querySelector(".study-previous").innerHTML = `Last Week - ${currList[4].previous}hrs`
-  // document.querySelector(".self-current").innerHTML = `${currList[5].current}hrs`
-  // document.querySelector(".self-previous").innerHTML = `Last Week - ${currList[5].previous}hrs`
+
+
+  // Array.from(current).forEach((e, i)=>{
+  //   e.innerHTML = `${currList[i].current}hrs`
+  // })
+  // Array.from(previous).forEach((e, i)=>{
+  //   e.innerHTML = `Last Week - ${currList[i].previous}hrs`
+  // })
 }
 
 const monthlyData = async()=>{
@@ -67,24 +67,24 @@ const monthlyData = async()=>{
   const currList = data.map(content=>{
     return content.timeframes.monthly
   })
-  const testing1 = document.querySelectorAll('.current')
-  const testing2 = document.querySelectorAll('.previous')
-  Array.from(testing1).forEach((e, i)=>{
+  const current = document.querySelectorAll('.current')
+  const previous = document.querySelectorAll('.previous')
+  
+  current.forEach((e,i)=>{
+    console.log(e,i,"using forEach JAVASCRIPT....");
     e.innerHTML = `${currList[i].current}hrs`
   })
-  Array.from(testing2).forEach((e, i)=>{
+
+  previous.forEach((e, i)=>{
     e.innerHTML = `Last Week - ${currList[i].previous}hrs`
   })
-  // document.querySelector(".work-current").innerHTML = `${currList[0].current}hrs`
-  // document.querySelector(".work-previous").innerHTML = `Last Week - ${currList[0].previous}hrs`
-  // document.querySelector(".exe-current").innerHTML = `${currList[1].current}hrs`
-  // document.querySelector(".exe-previous").innerHTML = `Last Week - ${currList[1].previous}hrs`
-  // document.querySelector(".play-current").innerHTML = `${currList[2].current}hrs`
-  // document.querySelector(".play-previous").innerHTML = `Last Week - ${currList[2].previous}hrs`
-  // document.querySelector(".social-current").innerHTML = `${currList[3].current}hrs`
-  // document.querySelector(".social-previous").innerHTML = `Last Week - ${currList[3].previous}hrs`
-  // document.querySelector(".study-current").innerHTML = `${currList[4].current}hrs`
-  // document.querySelector(".study-previous").innerHTML = `Last Week - ${currList[4].previous}hrs`
-  // document.querySelector(".self-current").innerHTML = `${currList[5].current}hrs`
-  // document.querySelector(".self-previous").innerHTML = `Last Week - ${currList[5].previous}hrs`
+
+  
+  // Array.from(current).forEach((e, i)=>{
+  //   e.innerHTML = `${currList[i].current}hrs`
+  // })
+  // Array.from(previous).forEach((e, i)=>{
+  //   e.innerHTML = `Last Week - ${currList[i].previous}hrs`
+  // })
+
 }
